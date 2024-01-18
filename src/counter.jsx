@@ -22,10 +22,11 @@ function Chai(){
 
     return(
         <>
-        <h1> Counter {counter}</h1>
-        <button onClick={addValue}>+</button>
-        <button onClick={subsValue}>-</button>
-
+        <div >
+        <h1 className=""> Counter <span className="bg-green"> {counter}</span></h1>
+        <button className="btn btn-success" onClick={addValue}>+</button>
+        <button className="btn btn-danger" onClick={subsValue}>-</button>
+        </div>
         </>
         )
 }
